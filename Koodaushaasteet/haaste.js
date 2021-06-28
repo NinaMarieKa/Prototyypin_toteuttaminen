@@ -86,4 +86,5 @@ Nyt = muutavuodet(2021) + muutakuukaudet(5) + 24;
 console.log(Nyt-Syntymaaika);
 
 
+
     }
