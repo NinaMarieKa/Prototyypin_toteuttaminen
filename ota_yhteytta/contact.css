@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+.ota-yhteytta {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 114, 66) 0%,
+    rgb(4, 109, 91) 100%
+  );
+  color: white;
+  font-size: 20px;
+  padding: 40px;
+}
+
+form {
+  padding: 40px;
+}
+
+.lomake-ryhma label {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.lomake-ryhma input {
+  width: 320px;
+  padding: 10px;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+input.invalid {
+  border: 1px solid red;
+}
