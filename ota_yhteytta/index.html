@@ -21,9 +21,67 @@
   <form>
     <div class="lomake-ryhma">
       <label>Koko nimi</label>
-      <input placeholder="Sinun etu- ja sukunimesi" />
-      <div class="error-hint">Tämä on pakollinen kenttä</div>
+      <input
+       name ="nimi"
+       class = ""
+       placeholder="Sinun etu- ja sukunimesi" />
+      <div class="error-hint hidden">Tämä on pakollinen kenttä</div>
+      <hr />
+      <label>Sähköposti</label>
+      <input
+       name="email"
+       class = ""
+       placeholder="Sähköpostisi" />
+       <div class="error-hint hidden">Tämä on pakollinen kenttä</div>
+       <hr />
+       <label>Oletko tyytyväinen sivuihini?</label>
+         <div class="valitse">
+            <label class="container">Ihan kivat
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Paljon kehittämistä
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Tykkään
+            <input type="checkbox">
+            <span class="checkmark"></span>
+           </label>
+          <hr/ >
+        </div>
+        <label>Mitä muuttaisit?</label>
+        <div class="mita-muuttaisit">
+        <label class="containerTwo">Ulkoasua
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmarkTwo"></span>
+        </label>
+        <label class="containerTwo">Sisältöä
+        <input type="radio" name="radio">
+        <span class="checkmarkTwo"></span>
+        </label>
+        <label class="containerTwo">En mitään
+        <input type="radio" name="radio">
+        <span class="checkmarkTwo"></span>
+       </label>
+       </div>
+      <hr />
+           <label>Oletko sinä</label>
+           <select class="mika-naista" id="toimenkuva">
+           <option value="opiskelija">Opiskelija</option>
+           <option value="palkkatyossa">Palkkatyössä</option>
+           <option value="elakelainen">Eläkeläinen</option>
+           <option value="yrittaja">Yrittäjä</option>
+      </select>
+
+    <hr />
+      <label>Lähetä meille vapaamuotoinen viesti tai palaute </label>
+      <div class="viesti">
+      <textarea name="palaute" rows="8" cols="80"></textarea>
     </div>
+    <hr />
+    </div>
+    <button>Lähetä</button>
   </form>
 </body>
 </html>
