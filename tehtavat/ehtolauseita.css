@@ -1,0 +1,30 @@
+body {
+  background-color: grey;
+}
+p {
+  font-size: 18px;
+}
+#eka {
+  background-color: pink;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  
+}
+#ruudut {
+  padding: 10px;
+  margin: 15px;
+  float: left;
+  margin-right: 15px;
+  width: 500px;
+
+}
+#ekaNappi {
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: black;
+  color: white;
+
+}
