@@ -1,6 +1,8 @@
 function otaYhteytta() {
   var nimi = document.forms["form"]["nimi"];
   var email = document.forms["form"]["email"];
+  var valinnat = document.forms["form"]["valinnat"];
+  var viesti = document.forms["form"]["palaute"];
 
 
       if (nimi.value == "") {
@@ -39,19 +41,16 @@ function otaYhteytta() {
          return false;
        }
 
-       var valinnat = document.forms["form"]["valinnat"];
-
 
        if (form.valinnat[0].selected == true) {
-         window.alert("Ole hyvä ja valitse toimenkuva")
-         valinnat.focus;
+         window.alert("Ole hyvä ja valitse toimenkuva");
+         return false;
        }
 
-       var viesti = document.forms["form"]["palaute"];
 
        if (viesti.value == "") {
-         window.alert("Viestikenttä on tyhjä.")
-         viesti.focus;
+         window.alert("Viestikenttä on tyhjä.");
+         return false;
        }
 
 }
