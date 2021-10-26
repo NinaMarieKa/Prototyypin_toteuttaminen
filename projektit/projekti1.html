@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8">
-<script type="text/javascript" src="contact.js">
-
-</script>
+<meta charset="UTF-8">
 <title> Document </title>
+<script defer src="projekti1.js"></script>
 <link rel="stylesheet" href="projekti1.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,34 +16,35 @@
   <h1>Ota yhteyttä</h1>
   <p>Kuulemme mielellämme palautetta sinulta! Lähetä meille viesti. </p>
   </div>
-  <form>
+  <form id="form" onsubmit="return otaYhteytta()" method="post">
     <div class="lomake-ryhma">
-      <label>Koko nimi</label>
+      <label for="nimi">Koko nimi</label>
       <input
-       name ="nimi"
-       class = ""
-       placeholder="Sinun etu- ja sukunimesi" />
-      <div class="error-hint hidden">Tämä on pakollinen kenttä</div>
+       id= "nimi"
+       name = "nimi"
+       type = "text"
+       placeholder="Sinun etu- ja sukunimesi">
       <hr />
-      <label>Sähköposti</label>
+      <div>
+      <label for="email">Sähköposti</label>
       <input
-       name="email"
-       class = ""
-       placeholder="Sähköpostisi" />
-       <div class="error-hint hidden">Tämä on pakollinen kenttä</div>
+       id="email"
+       nimi = "email"
+       type = "text"
+       placeholder="Sähköpostisi">
        <hr />
        <label>Oletko tyytyväinen sivuihini?</label>
          <div class="valitse">
             <label class="container">Ihan kivat
-            <input type="checkbox" checked="checked">
+            <input name="valinta" type="checkbox">
             <span class="checkmark"></span>
             </label>
             <label class="container">Paljon kehittämistä
-            <input type="checkbox">
+            <input name="valinta" type="checkbox">
             <span class="checkmark"></span>
             </label>
             <label class="container">Tykkään
-            <input type="checkbox">
+            <input name="valinta" type="checkbox">
             <span class="checkmark"></span>
            </label>
           <hr/ >
@@ -53,7 +52,7 @@
         <label>Mitä muuttaisit?</label>
         <div class="mita-muuttaisit">
         <label class="containerTwo">Ulkoasua
-        <input type="radio" checked="checked" name="radio">
+        <input type="radio" name="radio">
         <span class="checkmarkTwo"></span>
         </label>
         <label class="containerTwo">Sisältöä
@@ -67,7 +66,8 @@
        </div>
       <hr />
            <label>Oletko sinä</label>
-           <select class="mika-naista" id="toimenkuva">
+           <select name="valinnat" class="mika-naista" id="toimenkuva">
+           <option value="valitse">Valitse tästä</option>
            <option value="opiskelija">Opiskelija</option>
            <option value="palkkatyossa">Palkkatyössä</option>
            <option value="elakelainen">Eläkeläinen</option>
@@ -81,7 +81,7 @@
     </div>
     <hr />
     </div>
-    <button>Lähetä</button>
+    <button type="submit">Lähetä</button>
   </form>
 </body>
 </html>

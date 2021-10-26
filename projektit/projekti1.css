@@ -34,9 +34,6 @@ form {
 input.invalid {
   border: 1px solid red;
 }
-.error-hint {
-  color: red;
-}
 
 hr {
   height: 1px;
@@ -60,9 +57,7 @@ button:hover {
   border: white;
   color: white;
 }
-.hidden {
-  display: none;
-}
+
 .container {
   display: block;
   position: relative;
