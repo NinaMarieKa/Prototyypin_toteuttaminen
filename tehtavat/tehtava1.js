@@ -81,6 +81,7 @@ function rinenRiton()
   }
   else {
     document.write("Luku on pariton.")
+
   }
 }
 

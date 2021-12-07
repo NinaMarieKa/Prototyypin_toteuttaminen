@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang ="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+ <title>Kyselylomake</title>
+ <link rel="stylesheet" href="projekti1b.css">
+ <script type="text/javascript" src="projekti1b.js"></script>
+</head>
+<body>
+  <div id="osio">
+  <h1 id="otsikko">Kyselylomake</h1>
+  <p id="kuvaus">Täytä alla olevat lomakekentät</p>
+  <form id="Kyselylomake" onsubmit="return kysely()" method="post">
+    <label id="nimisyotto" for="nimi">Etu- ja sukunimesi: </label>
+     <input
+       id= "nimi"
+       name = "nimi"
+       type = "text"
+       placeholder= "Sinun etu- ja sukunimesi"
+       required minlength="5"/> <br>
+       <hr/>
+     <label id="emailsyotto" for="email">Sähköpostisi: </label>
+      <input
+       id= "email"
+       name= "email"
+       placeholder= "esimerkki@keuda.fi"
+       type="email"
+       required/> <br />
+       <hr/>
+    <label id="ikasyotot" for="ikä">Ikäsi: </label>
+      <input
+       id= "ika"
+       name= "ika"
+       type= "number"
+       placeholder= "Kirjoita ikäsi numeroina"
+       max="99"
+       required min="1"
+      />
+      <hr/>
+    <label>Toimenkuva:</label>
+      <select name="valinnat" class="mika-naista" id="pudotus">
+      <option value="valitse">Valitse tästä</option>
+      <option value="opiskelija">Opiskelija</option>
+      <option value="palkkatyossa">Palkkatyössä</option>
+      <option value="elakelainen">Eläkeläinen</option>
+      <option value="yrittaja">Yrittäjä</option>
+    </select>
+    <hr/>
+    <label>Suosittelisitko opintojasi muille?</label>
+      <div class="suositteletko">
+         <label class="laatikko">Kyllä
+         <input name="radio" type="radio" style="vertical-align: middle; margin: 0px;">
+         <span class="checkmark"></span>
+         </label>
+         <label class="laatikko">En
+         <input name="radio" type="radio" style="vertical-align: middle; margin: 0px;">
+         <span class="checkmark"></span>
+         </label>
+         <label class="laatikko">En osaa sanoa
+         <input name="radio" type="radio" style="vertical-align: middle; margin: 0px;">
+         <span class="checkmark"></span>
+        </label>
+     </div>
+     <hr/>
+     <label>Mikä on koulussa parasta?</label>
+     <div class="parasta">
+     <label class="laatikkoKaks">Ammattiaineet
+     <input type="checkbox" name="checkbox">
+     <span class="checkmarkTwo"></span>
+     </label>
+     <label class="laatikkoKaks">YTO- aineet
+     <input type="checkbox" name="checkbox">
+     <span class="checkmarkTwo"></span>
+     </label>
+     <label class="laatikkoKaks">Lomat
+     <input type="checkbox" name="checkbox">
+     <span class="checkmarkTwo"></span>
+    </label>
+    </div>
+
+
+
+ </div>
+</form>
+</body>
+</html>
