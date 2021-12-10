@@ -17,7 +17,7 @@
        name = "nimi"
        type = "text"
        placeholder= "Sinun etu- ja sukunimesi"
-       required minlength="5"/> <br>
+       minlength="5" maxlength="25" required/> <br>
        <hr/>
      <label id="emailsyotto" for="email">Sähköpostisi: </label>
       <input
@@ -34,11 +34,12 @@
        type= "number"
        placeholder= "Kirjoita ikäsi numeroina"
        max="99"
-       required min="1"
+       min="1"
+       required
       />
       <hr/>
-    <label>Toimenkuva:</label>
-      <select name="valinnat" class="mika-naista" id="pudotus">
+    <label id="toimenkuva">Toimenkuva:</label>
+      <select name="valinnat" id="pudotus">
       <option value="valitse">Valitse tästä</option>
       <option value="opiskelija">Opiskelija</option>
       <option value="palkkatyossa">Palkkatyössä</option>
@@ -46,41 +47,46 @@
       <option value="yrittaja">Yrittäjä</option>
     </select>
     <hr/>
-    <label>Suosittelisitko opintojasi muille?</label>
-      <div class="suositteletko">
-         <label class="laatikko">Kyllä
-         <input name="radio" type="radio" style="vertical-align: middle; margin: 0px;">
-         <span class="checkmark"></span>
-         </label>
-         <label class="laatikko">En
-         <input name="radio" type="radio" style="vertical-align: middle; margin: 0px;">
-         <span class="checkmark"></span>
-         </label>
-         <label class="laatikko">En osaa sanoa
-         <input name="radio" type="radio" style="vertical-align: middle; margin: 0px;">
-         <span class="checkmark"></span>
-        </label>
-     </div>
-     <hr/>
-     <label>Mikä on koulussa parasta?</label>
-     <div class="parasta">
-     <label class="laatikkoKaks">Ammattiaineet
-     <input type="checkbox" name="checkbox">
-     <span class="checkmarkTwo"></span>
-     </label>
-     <label class="laatikkoKaks">YTO- aineet
-     <input type="checkbox" name="checkbox">
-     <span class="checkmarkTwo"></span>
-     </label>
-     <label class="laatikkoKaks">Lomat
-     <input type="checkbox" name="checkbox">
-     <span class="checkmarkTwo"></span>
-    </label>
+    <label id="suositteletko">Suosittelisitko opintojasi muille:</label><br>
+    <label class="radio">
+       <input type="checkbox" name="radio" id="kylla" class="radio__input" value="kylla">
+       <div class="radio__radio"></div>
+       <span>Kyllä</span>
+    </label><br>
+    <label class="radio">
+       <input type="checkbox" name="radio" id="ei" class="radio__input" value="ei">
+       <div class="radio__radio"></div>
+       <span>En</span>
+    </label><br>
+    <label class="radio">
+       <input type="checkbox" name="radio" id="enTieda" class="radio__input" value="enTieda">
+       <div class="radio__radio"></div>
+       <span>En osaa vastata</span>
+    </label>  <hr/>
+      <label id="suositteletko">Parasta koulussa on:</label><br>
+      <label class="checkboxes">
+         <input type="checkbox" name="check" id="boxyx" class="box__input" value="boxyx">
+         <div class="box__box"></div>
+         <span>Ammattiaineet</span>
+      </label><br>
+      <label class="checkboxes">
+         <input type="checkbox" name="check" id="boxkax" class="box__input" valua="boxkax">
+         <div class="box__box"></div>
+         <span>YTO-aineet</span>
+      </label><br>
+      <label class="checkboxes">
+         <input type="checkbox" name="check" id="boxkol" class="box__input" value="boxkol">
+         <div class="box__box"></div>
+         <span>Lomat</span>
+      </label> <hr/>
+      <label id="viestikentta">Lähetä meille vapaamuotoinen viesti tai palaute </label>
+      <div class="viesti">
+      <textarea name="palaute" rows="8" cols="45"></textarea>
     </div>
+    <hr/>
+    <button id="laheta" type="submit">Lähetä</button>
 
-
-
- </div>
 </form>
+</div>
 </body>
 </html>
