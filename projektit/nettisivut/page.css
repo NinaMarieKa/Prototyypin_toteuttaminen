@@ -1,0 +1,164 @@
+body {
+  font: 15px/1.5 cursive;
+  padding:0;
+  margin:0;
+  background-color: rgb(129, 138, 163);
+}
+/* global stuff*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin:0;
+  padding:0;
+}
+
+.button1 {
+  height: 38px;
+  background: rgb(213, 137, 111);
+  border: 0;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  background-image: linear-gradient(
+    to right,
+    rgb(36, 35, 49) 0%,
+    rgb(53, 80, 112) 15%,
+    rgb(213, 137, 111) 50%,
+    rgb(53, 80, 112) 85%,
+    rgb(36, 35, 49) 100%
+  );
+  color: #ffffff;
+  padding-top: 30px;
+
+  min-height: 70px;
+  border-bottom: rgb(216, 243, 220) solid 3px;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #nimi {
+  float: left;
+}
+
+header #nimi h2{
+  margin:0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .current a{
+  color: rgb(245, 243, 187);
+  font-weight: bold;
+}
+
+header a:hover {
+  color: rgb(245, 243, 187);
+  font-weight: bold;
+}
+
+#showcase {
+  min-height: 400px;
+  background:url('./kuvat/10.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+#showcase h1{
+  margin-top: 100px;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+#newsletter {
+  background-image: linear-gradient(
+    to right,
+    rgb(36, 35, 49) 0%,
+    rgb(53, 80, 112) 15%,
+    rgb(213, 137, 111) 50%,
+    rgb(53, 80, 112) 85%,
+    rgb(36, 35, 49) 100%
+    );
+    border-bottom: rgb(216, 243, 220) solid 3px;
+    border-top: rgb(216, 243, 220) solid 3px;
+    color: #ffffff;
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+#mallit {
+  margin-top: 20px;
+  color: white;
+}
+
+#mallit .esimerkki {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#mallit .esimerkki2 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#mallit .esimerkki img{
+  width: 180px;
+}
+
+#mallit .esimerkki2 img{
+  width: 195px;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgb(36, 35, 49) 0%,
+    rgb(53, 80, 112) 15%,
+    rgb(213, 137, 111) 50%,
+    rgb(53, 80, 112) 85%,
+    rgb(36, 35, 49) 100%
+    );
+
+}

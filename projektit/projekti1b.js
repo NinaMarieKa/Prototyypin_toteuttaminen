@@ -4,7 +4,7 @@ function kysely() {
   var ei = document.getElementById('ei').checked;
   var entiia = document.getElementById('enTieda').checked;
 
-  if(kylla == false && ei == false && entiia == false) {
+  if((kylla == false) && (ei == false) && (entiia == false)){
     alert('Valitse vaihtoehto kohdasta "Suosittelisitko opintojasi muille"');
     return false;
   }
@@ -14,26 +14,30 @@ function kysely() {
 
   var valinnat = document.forms["Kyselylomake"]["valinnat"];
 
-  if (form.valinnat[0].selected == true) {
+  if (Kyselylomake.valinnat.selectedIndex == 0) {
     window.alert("Ole hyvä ja valitse toimenkuva");
+    Kyselylomake.valinnat.focus;
     return false;
   }
 
-  if (viesti.value == "") {
-   window.alert("Viestikenttä on tyhjä.");
-   return false;
-  }
 
   var yx = document.getElementById('boxyx').checked;
   var kax = document.getElementById('boxkax').checked;
   var kol = document.getElementById('boxkol').checked;
 
-  if(yx == false && kax == false && kol == false) {
+  if((yx == false) && (kax == false) && (kol == false)) {
     alert('Valitse vaihtoehto kohdasta "Parasta koulussa on"');
     return false;
   }
   else{
     return true;
+  }
+
+  var viesti = document.forms["Kyselylomake"]["palaute"];
+
+  if (viesti.value == "") {
+   window.alert("Viestikenttä on tyhjä.");
+   return false;
   }
 
   window.addEventListener("DOMContentLoaded", function(){
@@ -75,5 +79,5 @@ function emailIsValid (email) {
 
    if(emailIsValid(email)) {
     }
-    else{ alert("Anna oikea sähköpostiosoitteesi"); Kyselylomake.email.focus(); return (false); }
+    else{ alert("Anna oikea sähköpostiosoitteesi"); form.email.focus(); return (false); }
  }
