@@ -1,0 +1,93 @@
+body {
+  font: 15px/1.5 cursive;
+  padding:0;
+  margin:0;
+  background-color: rgb(129, 138, 163);
+}
+/* global stuff*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin:0;
+  padding:0;
+}
+
+header {
+  background-image: linear-gradient(
+    to right,
+    rgb(36, 35, 49) 0%,
+    rgb(53, 80, 112) 15%,
+    rgb(213, 137, 111) 50%,
+    rgb(53, 80, 112) 85%,
+    rgb(36, 35, 49) 100%
+  );
+  color: #ffffff;
+  padding-top: 30px;
+
+  min-height: 70px;
+  border-bottom: rgb(216, 243, 220) solid 3px;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #nimi {
+  float: left;
+}
+
+header #nimi h2{
+  margin:0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .current a{
+  color: rgb(245, 243, 187);
+  font-weight: bold;
+}
+
+header a:hover {
+  color: rgb(245, 243, 187);
+  font-weight: bold;
+}
+ aside {
+   float: left;
+ }
+
+aside p,h1 {
+  color: white;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgb(36, 35, 49) 0%,
+    rgb(53, 80, 112) 15%,
+    rgb(213, 137, 111) 50%,
+    rgb(53, 80, 112) 85%,
+    rgb(36, 35, 49) 100%
+    );
+
+}
