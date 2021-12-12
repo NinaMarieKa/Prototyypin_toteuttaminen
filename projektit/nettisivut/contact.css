@@ -84,6 +84,20 @@ header a:hover {
   margin-bottom: 10px;
 }
 
+#contactme form {
+  margin-top: 15px;
+}
+
+#contactme radio {
+  display: inline-block;
+}
+
+#contactme input{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
 footer {
   padding: 20px;
   margin-top: 20px;
