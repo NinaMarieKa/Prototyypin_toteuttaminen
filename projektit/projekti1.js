@@ -15,6 +15,7 @@ function otaYhteytta() {
           window.alert("Ole hyvä ja kirjoita toimiva sähköpostiosoite.");
           email.focus();
           return false;
+          debugger;
       }
 
         var valinta = document.forms["form"]["valinta"];
