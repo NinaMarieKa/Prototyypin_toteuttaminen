@@ -19,7 +19,7 @@
           </div>
           <nav>
             <ul>
-              <li><a href="index.html">About</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="photography.html">Photography</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -36,24 +36,27 @@
     </section>
     <section id="contactme">
       <div class="container">
-       <form class="form" action="contact.html" method="post">
+       <form id="form" onsubmit="isValid()" method="post">
          <label for="name">Your name:<br>
-         <input type="text" placeholder="Enter name..">
+         <input type="text" name="name" id="name" placeholder="Enter name.." minlength="2" required>
          </label><br>
          <label for="email">Your email address:<br>
-         <input type="email" placeholder="Enter email..">
+         <input type="text" name="email" id="email" placeholder="Enter email.." required>
          </label><br>
-         <label for="reason"> My contact request is about:
-         <input type="radio" name="order" value="other"> Order
-         <input type="radio" name="other" value="other"> Other
+         <div class="radiot">
+         <label for="reason"> My contact request is about:<br>
+         <label>Order
+         <input type="radio" name="radio" id="radio" value="order">
          </label><br>
+         <label>Other
+         <input type="radio" name="radio" id="radioii" value="other">
+         </label></div>
          <label for="textarea">Write your message here:<br>
-         <textarea name="msg" rows="8" cols="80"></textarea>
-         <button type="submit" name="button" class="button1">Submit</button>
+         <textarea name="msg" id="msg" rows="8" cols="80"></textarea>
+         <button type="submit" name="button" onclick="isValid()" class="button1">Submit</button>
         </form>
       </div>
     </section>
-
     <section>
       <footer>
         <p> Nina Kaunisvaara &copy; 2021</p>

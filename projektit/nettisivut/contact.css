@@ -4,11 +4,22 @@ body {
   margin:0;
   background-color: rgb(129, 138, 163);
 }
+
 /* global stuff*/
 .container {
   width: 80%;
   margin: auto;
   overflow: hidden;
+
+}
+
+.container input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.container textarea {
+  margin-top: 10px;
 }
 
 ul {
@@ -70,6 +81,8 @@ header a:hover {
 }
 
 
+
+
 #showcase {
   min-height: 400px;
   background:url('./kuvat/10.jpg');
@@ -98,6 +111,7 @@ header a:hover {
   width: 250px;
 }
 
+
 footer {
   padding: 20px;
   margin-top: 20px;
@@ -110,5 +124,5 @@ footer {
     rgb(53, 80, 112) 85%,
     rgb(36, 35, 49) 100%
     );
-
+    text-align: center;
 }
