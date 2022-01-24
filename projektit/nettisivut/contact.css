@@ -79,10 +79,6 @@ header a:hover {
   color: rgb(245, 243, 187);
   font-weight: bold;
 }
-
-
-
-
 #showcase {
   min-height: 400px;
   background:url('./kuvat/10.jpg');
@@ -97,8 +93,13 @@ header a:hover {
   margin-bottom: 10px;
 }
 
+#showcase p {
+  font-size: 22px;
+}
+
 #contactme form {
   margin-top: 15px;
+  font-size: 22px;
 }
 
 #contactme radio {
@@ -111,6 +112,18 @@ header a:hover {
   width: 250px;
 }
 
+textarea {
+  resize: none;
+}
+
+#button button {
+  font-size: 22px;
+  padding: 10px;
+  background: rgb(213, 137, 111);
+  color: white;
+  position: absolute;
+  float: right;
+}
 
 footer {
   padding: 20px;

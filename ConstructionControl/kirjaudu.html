@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Työmaiden hallinta</title>
+<link rel="stylesheet" type="text/css" href="kirjaudu.css">
+<meta name="viewport" content="width=device-width">
+<script type="text/javascript" src="kirjaudu.js"></script>
+</head>
+<body>
+  <header id="head">
+    <article id='eka'>
+      <h1 id='otsikko'>TYÖMAIDEN HALLINTA</h1>
+    </article>
+  </header>
+  <div id="kuva"><img src="logo.jpg" alt="logo" width="400px" height="400px"></img></div><br>
+     <p id="sisaan">KIRJAUDU SISÄÄN</p><br>
+<div class="wrapper">
+  <div class="kirjsis">
+    <form class="lomakeKirjaudu" action="index.html" method="post">
+      <p>TYÖNTEKIJÄT</p>
+       <label for="tunnus">Käyttäjätunnus:<br>
+        <input type="text" name="name" id="tunnus" placeholder="Kirjoita käyttäjätunnus.." minlength="5" required>
+      </label><br>
+      <label for="pwd">Salasana:<br>
+        <input type="password" name="password" id="salasana" placeholder="Kirjoita salasana.." minlength="5" required><br>
+      <button type="submit" id="sisaanTyo" name="button" onclick="">Kirjaudu sisään</button>
+    </form>
+  </div>
+  <div class="kirjsis">
+    <form class="lomakeKirjaudu" action="index.html" method="post">
+      <p>HALLINTA</p>
+       <label for="tunnus">Käyttäjätunnus:</label><br>
+        <input type="text" name="tunnus" id="tunnusHallinta" placeholder="Kirjoita käyttäjätunnus.." minlength="5" required>
+       <br>
+      <label for="pwd">Salasana:</label><br>
+        <input type="password" name="password" id="salasanaHallinta" placeholder="Kirjoita salasana.." required><br>
+      <button type="submit" id="sisaanHallinta" name="button" onclick="">Kirjaudu sisään</button>
+  </form>
+</div>
+</div>
+</form>
+</body>
+</html>

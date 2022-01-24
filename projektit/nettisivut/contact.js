@@ -40,8 +40,8 @@ var viesti = document.forms["form"]["msg"];
 // funktio, jolla tarkistetaan onko sähköposti oikesa
 function ValidateEmail(email){
 
-  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if(email.value.match(mailformat)) {
+  var reg = /^\S+@\S+\.\S+$/;
+  if(email.value.match(reg)) {
     alert("Valid email address");
     document.form.email.focus();
   return true;
