@@ -1,0 +1,14 @@
+#vasen {
+  width: 50%;
+  float:left;
+  height: 200px;
+  background-color: red;
+  text-align: center;
+}
+#oikea {
+  width: 50%;
+  float:left;
+  height: 200px;
+  background-color: green;
+  text-align: center;
+}
