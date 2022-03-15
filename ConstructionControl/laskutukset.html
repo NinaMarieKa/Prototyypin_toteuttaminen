@@ -5,7 +5,7 @@
 <title>Laskutukset</title>
 <link rel="stylesheet" type="text/css" href="hallinta.css">
 <meta name="viewport" content="width=device-width">
-<script type="text/javascript" src="tyot.js"></script>
+<script type="text/javascript" src="laskutukset.js"></script>
 </head>
 <body>
  <div id="container">
@@ -28,12 +28,54 @@
     </nav>
   </div>
   </header>
-  <div id="tyomaa_lomake">
-    <form class="lomakeTyomaa" action="tyomaa.html" method="post">
-
-
-    </form>
+  <div class="lomakeKuvaus">
+    <h1>SYÖTÄ LASKUTUKSEN TIEDOT ALLA OLEVALLE LOMAKKEELLE</h1>
   </div>
+  <div class="taulu">
+    <table>
+      <tr>
+        <td>
+          <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+            <div>
+              <label>Tilaaja:</label>
+              <input type="text" name="tilaaja" id="tilaaja">
+            </div>
+            <div>
+              <label>Työnumero:</label>
+              <input type="text" name="tyonro" id="tyonro">
+            </div>
+            <div>
+              <label>Onko työ laskutettu:</label>
+              <input type="text" name="lasku" id="lasku">
+            </div>
+            <div>
+              <label>Lisätietoja:</label>
+              <input type="text" name="info" id="info">
+            </div>
+            <div  class="form-action-buttons">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </td>
+        <td>
+          <table class="lista" id="laskutuksetLista">
+            <thead>
+                <tr>
+                  <th>Tilaaja</th>
+                  <th>Työnumero</th>
+                  <th>Onko työ laskutettu</th>
+                  <th>Lisätietoja</th>
+                  <th></th>
+                </tr>
+            </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </td
+    </tr>
+  </table>
+</div>
   <footer id="footer">
     <article id='foot'>
       <img src="logo.jpg" alt="logo" width="100px" height="100px"></img>
