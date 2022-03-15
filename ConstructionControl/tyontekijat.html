@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Työntekijät</title>
+<link rel="stylesheet" type="text/css" href="hallinta.css">
+<meta name="viewport" content="width=device-width">
+<script type="text/javascript" src="tyot.js"></script>
+</head>
+<body>
+ <div id="container">
+  <header id="head">
+    <article id='eka'>
+      <h1 id='otsikko'>TYÖMAIDEN HALLINTA</h1>
+      <p id='sivu'>TYÖNTEKIJÄT</p>
+      <hr>
+    </article>
+    <div id="valikko">
+    <nav>
+      <ul>
+        <li><a href="aloitus_hallinta.html">ALOITUS</a></li>
+        <li><a href="tyot.html">TYÖT</a></li>
+        <li><a href="tyontekijat.html">TYÖNTEKIJÄT</a></li>
+        <li><a href="tyomaa.html">TYÖMAAT</a></li>
+        <li><a href="tilaukset.html">TILAUKSET</a></li>
+        <li><a href="laskutukset.html">LASKUTUKSET</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div class="lomakeKuvaus">
+    <h1>SYÖTÄ TYÖNTEKIJÄN TIEDOT ALLA OLEVALLE LOMAKKEELLE</h1>
+  </div>
+  <div class="taulu">
+    <table>
+      <tr>
+        <td>
+          <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+            <div>
+              <label>Nimi:</label>
+              <input type="text" name="nimi" id="nimi">
+            </div>
+            <div>
+              <label>Osoite:</label>
+              <input type="text" name="osoite" id="osoite">
+            </div>
+            <div>
+              <label>Puhelinnumero:</label>
+              <input type="text" name="puhnro" id="puhnro">
+            </div>
+            <div>
+              <label>Veronumero:</label>
+              <input type="text" name="veronro" id="veronro">
+            </div>
+            <div>
+              <label>Sähköposti:</label>
+              <input type="text" name="email" id="email">
+            </div>
+            <div  class="form-action-buttons">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </td>
+        <td>
+          <table class="lista" id="tyontekijaLista">
+            <thead>
+                <tr>
+                  <th>Nimi</th>
+                  <th>Osoite</th>
+                  <th>Puhelinnumero</th>
+                  <th>Veronumero</th>
+                  <th>Sähköposti</th>
+                  <th></th>
+                </tr>
+            </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </td
+    </tr>
+  </table>
+</div>
+</div>
+  <footer id="footer">
+    <article id='foot'>
+      <img src="logo.jpg" alt="logo" width="100px" height="100px"></img>
+      <p id='tiedot'>
+      Pro Hole Oy <br>
+      Myrttitie 3<br>
+      01300 Vantaa</p>
+    </article>
+  </footer>
+</div>
+</body>
+</html>
