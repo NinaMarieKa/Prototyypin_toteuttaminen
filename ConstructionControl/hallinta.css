@@ -4,55 +4,65 @@ body {
   margin: 0;
   height:100%;
 }
-dody > table {
+body > table {
   width: 80%;
 }
 table{
     border-collapse: collapse;
-}
-table.lista{
-    width:100%;
 
 }
+th{
+    background-color: white;
+}
 td, th {
-    border: 1px solid #dddddd;
+    border: 3px solid white;
     text-align: left;
     padding: 8px;
+
 }
 input[type=text], input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 4px;
     box-sizing: border-box;
+
 }
 input[type=submit]{
-    width: 60%;
-    background-color: #ddd;
-    color: #000;
+    width: 100%;
+    background-color: grey;
+    color: white;
     padding: 14px 20px;
     margin: 8px 0;
-    border: none;
+    border: 2px solid white;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 form div.form-action-buttons{
     text-align: right;
+
+}
+tr,table.lista thead>tr {
+    background-color: #dddddd;
 }
 
+table.lista tr:nth-child(even){
+  background-color: white;
+}
 a{
     cursor: pointer;
     text-decoration: underline;
-    color: #0000ee;
+    color: black;
     margin-right: 4px;
 }
-
-label.validation-error{
-    color:   red;
-    margin-left: 5px;
+table.center {
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .container {
   width: 100%;
   margin: auto;
