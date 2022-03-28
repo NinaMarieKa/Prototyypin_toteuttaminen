@@ -1,12 +1,19 @@
-html, body {
+body {
   background-color: grey;
   padding: 0;
   margin: 0;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 
 /* header- osion muotoilu*/
 #head {
 background: white;
+margin-bottom: 20px;
 }
 #eka {
   text-align: center;
@@ -16,11 +23,59 @@ background: white;
   color: black;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  text-align: center;
+  margin: 0;
+}
+#sivu {
+  font-size: 30px;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   margin: 0;
 }
+#kokeilu {
+  display: table;
+  width: 100%;
+  background-color: rgb(89, 89, 89);
+}
+#kokeile {
+  height: 500px;
+  width: 50%;
+  display: table-cell;
+  text-align: center;
+}
+form {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 40px;
+}
+
+aside {
+  height: 300px;
+  width: 50%;
+  display: table-cell;
+  text-align: center;
+}
+@media (max-width: 600px){
+  #kokeile {
+    display: block;
+    height: 400px;
+    width: 100%;
+  }
+
+  aside {
+    display: block;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
 #kuva {
   text-align: center;
   padding-top: 30px;
@@ -32,22 +87,11 @@ background: white;
   font-size: 32px;
 }
 /* Työntekijöiden ja hallinnan kirjautumisosion muotoilu */
-.wrapper {
-  text-align: center;
-  overflow: hidden;
-  padding-bottom: 30px;
-}
-
-.kirjsis {
-margin: auto;
-width: 50%;
-float: left;
-}
 
 
 /* lomakkeiden muotoilu */
 .lomakeKirjaudu {
-  border: 1px solid #ccc;
+
   border-radius: 10px;
   font-size: 24px;
   -webkit-appearance: none;
@@ -62,10 +106,11 @@ float: left;
   font-size: 30px;
 }
 .lomakeKirjaudu button {
-float:right;
+display: block;
+float: right;
 margin-top: 10px;
-margin-right: 15px;
-margin-bottom: 20px;
+margin-right: 37px;
+margin-bottom: 5px;
 text-align: center;
 padding: 10px;
 font-size: 18px;
@@ -76,7 +121,7 @@ button:hover {
   font-weight: bold;
 }
 .lomakeKirjaudu label {
-  font-size: 28px;
+  font-size: 30px;
   padding-left: 10px;
   margin-bottom: 10px;
   text-align: left;
@@ -91,6 +136,7 @@ button:hover {
   margin-bottom: 10px;
 }
 #footer {
+  margin-top: 20px;
   background: white;
   bottom: 0;
   width: 100%;
