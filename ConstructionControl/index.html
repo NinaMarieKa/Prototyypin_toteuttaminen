@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Kirjaudu sisään</title>
 <link rel="stylesheet" type="text/css" href="kirjaudu.css">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
 <script type="text/javascript" src="kirjaudu.js"></script>
 </head>
 <body>
@@ -14,35 +14,21 @@
       <p id='sivu'>KIRJAUTUMISSIVU</p>
     </article>
   </header>
-  <section id="slideshows">
-    <div class="container" style="max-width:600px">
-      <img name="slides" src="./kuvat/kuva1.jpg" alt="CEO" style="width:100%">
+<div class="taustakuva">
+  <div class="lomake">
+    <div class="nappi-laatikko">
+      <div id="btn">
+
+      </div>
+       <button type="button" class="toggle-button">TYÖNTEKIJÄT</button>
+       <button type="button" class="toggle-button">HALLINTA</button>
     </div>
-  </section>
-     <p id="sisaan">KIRJAUDU SISÄÄN</p><br>
-<div id='kokeilu'>
-  <section id='kokeile'>
-    <form class="lomakeKirjaudu" action="index.html" method="post">
-      <p>TYÖNTEKIJÄT</p>
-       <label for="tunnus">Käyttäjätunnus:<br>
-        <input type="text" name="name" id="tunnus" placeholder="Kirjoita käyttäjätunnus.." minlength="5" required>
-      </label><br>
-      <label for="pwd">Salasana:<br>
-        <input type="password" name="password" id="salasana" placeholder="Kirjoita salasana.." minlength="5" required><br>
-      <button type="submit" id="sisaanTyo" name="button" onclick="">Kirjaudu sisään</button>
+    <form class="kentat" action="index.html" method="post">
+      <input type="text" name="kayttaja" placeholder="Käyttäjätunnus" required>
+      <input type="text" name="salasana" placeholder="Salasana" required>
+      <button type="submit" class="submit-btn">Kirjaudu sisään</button>
     </form>
-  </section>
-  <aside>
-    <form class="lomakeKirjaudu" action="index.html" method="post">
-      <p>HALLINTA</p>
-       <label for="tunnus">Käyttäjätunnus:</label><br>
-        <input type="text" name="tunnus" id="tunnusHallinta" placeholder="Kirjoita käyttäjätunnus.." minlength="5" required>
-       <br>
-      <label for="pwd">Salasana:</label><br>
-        <input type="password" name="password" id="salasanaHallinta" placeholder="Kirjoita salasana.." required><br>
-      <button type="submit" id="sisaanHallinta" name="button" onclick="">Kirjaudu sisään</button>
-  </form>
-  </aside>
+  </div>
 </div>
 <div>
 <footer id="footer">

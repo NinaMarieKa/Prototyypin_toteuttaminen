@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Tilaukset</title>
+<link rel="stylesheet" type="text/css" href="hallinta.css">
+<meta name="viewport" content="width=device-width">
+<script type="text/javascript" src="tilaukset.js"></script>
+</head>
+<body>
+ <div id="container">
+  <header id="head">
+    <article id='eka'>
+      <h1 id='otsikko'>TYÖMAIDEN HALLINTA</h1>
+      <p id='sivu'>TILAUKSET</p>
+      <hr>
+    </article>
+    <div id="valikko">
+    <nav>
+      <ul>
+        <li><a href="aloitus_hallinta.html">ALOITUS</a></li>
+        <li><a href="tyot.html">TYÖT</a></li>
+        <li><a href="tyontekijat.html">TYÖNTEKIJÄT</a></li>
+        <li><a href="tyomaa.html">TYÖMAAT</a></li>
+        <li><a href="tilaukset.html">TILAUKSET</a></li>
+        <li><a href="laskutukset.html">LASKUTUKSET</a></li>
+        <li><a href="index.html">KIRJAUDU ULOS</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div class="lomakeKuvaus">
+    <h1>SYÖTÄ TILAUKSEN TIEDOT ALLA OLEVALLE LOMAKKEELLE</h1>
+  </div>
+  <div class="taulu">
+    <table class="center">
+      <tr>
+        <td>
+          <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+            <div>
+              <label>Tilaaja:</label>
+              <input type="text" name="tilaaja" id="tilaaja">
+            </div>
+            <div>
+              <label>Osoite:</label>
+              <input type="text" name="osoite" id="osoite">
+            </div>
+            <div>
+              <label>Tilattu työ:</label>
+              <input type="text" name="tyo" id="tyo">
+            </div>
+            <div>
+              <label>Työntekijät:</label>
+              <input type="text" name="ttekija" id="ttekija">
+            </div>
+            <div>
+              <label>Työnumero:</label>
+              <input type="text" name="tyonro" id="tyonro">
+            </div>
+            <div>
+              <label>Lisätietoja:</label>
+              <input type="text" name="info" id="info">
+            </div>
+            <div  class="form-action-buttons">
+              <input type="submit" value="Tallenna">
+            </div>
+          </form>
+        </td>
+        <td>
+          <table class="lista" id="tilauksetLista">
+            <thead>
+                <tr>
+                  <th>Tilaaja</th>
+                  <th>Osoite</th>
+                  <th>Tilattu työ</th>
+                  <th>Työntekijät</th>
+                  <th>Työnumero</th>
+                  <th>Lisätietoja</th>
+                  <th></th>
+                </tr>
+            </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </td
+    </tr>
+  </table>
+</div>
+</div>
+  <footer id="footer">
+    <article id='foot'>
+      <img src="logo.jpg" alt="logo" width="100px" height="100px"></img>
+      <p id='tiedot'>
+      Pro Hole Oy <br>
+      Myrttitie 3<br>
+      01300 Vantaa</p>
+    </article>
+  </footer>
+</div>
+</body>
+</html>
