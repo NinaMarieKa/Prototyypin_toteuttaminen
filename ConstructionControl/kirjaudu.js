@@ -1,50 +1,15 @@
-var i=0;
-var images = [];
-var time = 3000;
+var x = document.getElementById("tyo");
+var y = document.getElementById("hallinta");
+var z = document.getElementById("btn");
 
-images[0] ="kuvat/kuva1.jpg";
-images[1] = "kuvat/kuva2.jpg";
-images[2] = "kuvat/kuva3.jpg";
-images[3] = "kuvat/kuva4.jpg";
-images[4] ="kuvat/kuva5.jpg";
-
-function changeImg() {
-  document.slides.src = images[i];
-  if (i < images.length -1) {
-    i++
-  }
-  else {
-    i = 0;
-  }
-  setTimeout("changeImg()", time)
+function kirjauduHallinta() {
+  x.style.left = "-400px";
+  y.style.left = "50px";
+  z.style.left = "130px";
 }
 
-window.onload = changeImg;
-
-function KirjauduSisaanTyo() {
-
-  var tunnusTyo = document.getElementById('tunnusTyo').value;
-  var salisTyo = document.getElementById('salasana').value;
-
-  if(tunnusTyo == "esimerkki" && salisTyo == "esimerkki")
-  {
-    alert("Kirjautuminen onnistui. Sinut ohjataan lomakesivulle.")
-    window.location.href="lomake_tyontekijat.html";
-  }
-  else {
-    alert("Väärä tunnus tai salasana.");
-  }
-}
-function KirjauduSisaanHallinta() {
-
-  var tunnusHallinta = document.getElementById('tunnusHallinta').value;
-  var salisHallinta = document.getElementById('sisaanHallinta').value;
-
-  if (tunnusHallinta == "esimerkki" && salisHallinta == "esimerkki") {
-    alert("Kirjautuminen onnistui. Sinut ohjataan aloitussivulle.")
-    window.location.href="aloitus_hallinta.html";
-  }
-  else {
-    alert("Väärä tunnus tai salasana.");
-  }
+function kirjauduTyo() {
+  x.style.left = "50px";
+  y.style.left = "450px";
+  z.style.left = "0";
 }

@@ -17,16 +17,21 @@
 <div class="taustakuva">
   <div class="lomake">
     <div class="nappi-laatikko">
-      <div id="btn">
-
-      </div>
-       <button type="button" class="toggle-button">TYÖNTEKIJÄT</button>
-       <button type="button" class="toggle-button">HALLINTA</button>
+      <div id="btn"></div>
+       <button type="button" class="toggle-button" onclick="kirjauduTyo()">TYÖNTEKIJÄT</button>
+       <button type="button" class="toggle-button" onclick="kirjauduHallinta()">HALLINTA</button>
     </div>
-    <form class="kentat" action="index.html" method="post">
-      <input type="text" name="kayttaja" placeholder="Käyttäjätunnus" required>
-      <input type="text" name="salasana" placeholder="Salasana" required>
-      <button type="submit" class="submit-btn">Kirjaudu sisään</button>
+    <form class="kentat" id="tyo">
+      <input type="text" class="tekstikentta" name="kayttaja" placeholder="Käyttäjätunnus" required>
+      <input type="text" class="tekstikentta" name="salasana" placeholder="Salasana" required>
+      <input type="checkbox" class="checkbox"><span>Muista salasana</span>
+      <button type="submit" class="submit-btn">KIRJAUDU SISÄÄN</button>
+    </form>
+    <form class="kentat" id="hallinta">
+      <input type="text" class="tekstikentta" name="kayttaja" placeholder="TOIMIIKO" required>
+      <input type="text" class="tekstikentta" name="salasana" placeholder="Salasana" required>
+      <input type="checkbox" class="checkbox"><span>Muista salasana</span>
+      <button type="submit" class="submit-btn">KIRJAUDU SISÄÄN</button>
     </form>
   </div>
 </div>
