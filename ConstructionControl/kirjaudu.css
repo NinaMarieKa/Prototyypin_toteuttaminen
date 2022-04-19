@@ -12,12 +12,13 @@ body {
 
 .taustakuva {
   width: 100%;
-  height: 80%;
+  height: 100%;
   background-image: url("kuvat/suora_certified.jpg");
   background-position: center;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 .lomake {
  width: 380px;
@@ -36,6 +37,7 @@ body {
   box-shadow: 0 0 20px 9px #6A040F;
   border-radius: 30px;
   background-color: #fff;
+
 }
 .toggle-button {
   padding: 10px 30px;
@@ -46,12 +48,13 @@ body {
   position: relative;
   color: black;
   font-size: 12px;
+
 }
 #btn {
   top: 0;
   left: 0;
   position: absolute;
-  width: 130px;
+  width: 140px;
   height: 100%;
   background: linear-gradient(to right, #6A040F,#9D0208,#D00000);
   border-radius: 30px;
@@ -87,67 +90,8 @@ border-top: 5px solid black;
   text-align: center;
   margin: 0;
 }
-#kokeilu {
-  display: table;
-  width: 100%;
-  background-color: rgb(89, 89, 89);
-}
-#kokeile {
-  height: 500px;
-  width: 50%;
-  display: table-cell;
-  text-align: center;
-}
-#login-error-msg-holder {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-#login-error-msg {
-  width: 23%;
-  text-align: center;
-  margin: 0;
-  padding: 5px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #8a0000;
-  border: 1px solid #8a0000;
-  background-color: #e58f8f;
-  opacity: 0;
-}
 
-#error-msg-second-line {
-  display: block;
-}
 
-form {
-  margin-top: 20px;
-  text-align: left;
-  font-size: 40px;
-}
-
-aside {
-  height: 300px;
-  width: 50%;
-  display: table-cell;
-  text-align: center;
-}
-@media (max-width: 600px){
-  #kokeile {
-    display: block;
-    height: 400px;
-    width: 100%;
-  }
-
-  aside {
-    display: block;
-    height: 300px;
-    width: 100%;
-    margin-bottom: 60px;
-  }
-}
 
 #kuva {
   text-align: center;
@@ -213,7 +157,7 @@ span {
   font-size: 16px;
   bottom: 68px;
 }
-#tyo {
+#tyontekijat {
  left: 50px;
 }
 #hallinta {
