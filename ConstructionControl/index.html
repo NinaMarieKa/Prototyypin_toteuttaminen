@@ -9,24 +9,30 @@
 </head>
 <body>
   <header id="head">
+      <!-- Sivun otsikointi  -->
     <article id='eka'>
       <h1 id='otsikko'>TYÖMAIDEN HALLINTA</h1>
       <p id='sivu'>KIRJAUTUMISSIVU</p>
     </article>
   </header>
+    <!-- Kirjautumissivun tausta -->
 <div class="taustakuva">
+    <!-- Luodaan lomake -->
   <div class="lomake">
+      <!-- Luodaan nappi, jolla voidaan valita kirjaudutaanko hallinnan vai työntekijöiden puolelle -->
     <div class="nappi-laatikko">
       <div id="btn"></div>
        <button type="button" class="toggle-button" onclick="kirjauduTyo()">TYÖNTEKIJÄT</button>
        <button type="button" class="toggle-button" onclick="kirjauduHallinta()">HALLINTA</button>
     </div>
+      <!-- Työntekijöiden lomake -->
     <form class="kentat" id="tyontekijat">
       <input type="text" class="tekstikentta" name="kayttaja" placeholder="Käyttäjätunnus" required>
       <input type="password" class="tekstikentta" name="salasana" placeholder="Salasana" required>
       <input type="checkbox" class="checkbox"><span>Muista salasana</span>
       <button type="submit" class="submit-btn">KIRJAUDU SISÄÄN</button>
     </form>
+      <!-- Hallinnan lomake -->
     <form class="kentat" id="hallinta">
       <input type="text" class="tekstikentta" name="kayttaja" placeholder="Käyttäjätunnus" required>
       <input type="password" class="tekstikentta" name="salasana" placeholder="Salasana" required>
@@ -36,9 +42,10 @@
   </div>
 </div>
 <div>
+    <!-- Footer- osio -->
 <footer id="footer">
   <article id='foot'>
-    <img src="logo.jpg" alt="logo" width="100px" height="100px"></img>
+    <img src="kuvat/logo.jpg" alt="logo" width="100px" height="100px"></img>
     <p id='tiedot'>
     Pro Hole Oy <br>
     Myrttitie 3<br>

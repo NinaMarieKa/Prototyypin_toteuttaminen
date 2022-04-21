@@ -10,16 +10,17 @@
 <body>
  <div class="container">
   <header id="head">
+      <!-- Sivun otsikko -->
     <article id='eka'>
       <h1 id='otsikko'>TYÖMAIDEN HALLINTA</h1>
       <p id='sivu'>ALOITUSSIVU</p>
       <hr>
     </article>
+    <!-- Päävalikko -->
     <div id="valikko">
     <nav>
       <ul>
-        <li><a href="aloitus_hallinta.html">ALOITUS</a></li>
-        <li><a href="tyot.html">TYÖT</a></li>
+        <li><a class="active" href="aloitus_hallinta.html">ALOITUS</a></li>
         <li><a href="tyontekijat.html">TYÖNTEKIJÄT</a></li>
         <li><a href="tyomaa.html">TYÖMAAT</a></li>
         <li><a href="tilaukset.html">TILAUKSET</a></li>
@@ -29,17 +30,21 @@
     </nav>
   </div>
   </header>
-  <div id="valitse">
+    <!-- Käyttäjän ohjeistus -->
+  <div class="valitse">
     <p>VALITSE HALUAMASI TOIMINTO YLLÄOLEVASTA VALIKOSTA</p><br>
   </div>
+    <!-- Slideshow html osuus -->
   <section id="slideshows">
     <div class="container">
       <img name="slides" src="./kuvat/kuva1.jpg" alt="CEO" style="width:100%">
     </div>
   </section>
+    <!-- Sivun footer- osio -->
+    <div class="clear"></div>
   <footer id="footer">
     <article id='foot'>
-      <img src="logo.jpg" alt="logo" width="100px" height="100px"></img>
+      <img src="kuvat/logo.jpg" alt="logo" width="100px" height="100px"></img>
       <p id='tiedot'>
       Pro Hole Oy <br>
       Myrttitie 3<br>
