@@ -12,14 +12,16 @@ body {
 }
 
 .container {
-  width: auto;
+  width: 100%;
   margin: auto;
   position: center center;
-  height: 100%;
+  height: 60%;
+
 
 }
 #head {
-background: white;
+  background: rgb(255,255,255,0.5);
+  backdrop-filter: blur(9px);
 }
 
 #eka {
@@ -96,7 +98,7 @@ header a.active {
 }
 #footer {
   background: rgb(255,255,255,0.5);
-  backdrop-filter: blur(9px);
+  backdrop-filter: blur(10px);
   bottom: 0;
   width: 100%;
   height: 100px;
