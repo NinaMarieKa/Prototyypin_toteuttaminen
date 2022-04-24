@@ -26,16 +26,16 @@
        <button type="button" class="toggle-button" onclick="kirjauduHallinta()">HALLINTA</button>
     </div>
       <!-- Työntekijöiden lomake -->
-    <form class="kentat" id="tyontekijat">
-      <input type="text" class="tekstikentta" name="kayttaja" placeholder="Käyttäjätunnus" required>
+    <form action="yhdista.php" method="POST" class="kentat" id="tyontekijat">
+      <input type="text" class="tekstikentta" name="tunnus" placeholder="Käyttäjätunnus" required>
       <input type="password" class="tekstikentta" name="salasana" placeholder="Salasana" required>
       <input type="checkbox" class="checkbox"><span>Muista salasana</span>
       <button type="submit" class="submit-btn">KIRJAUDU SISÄÄN</button>
     </form>
       <!-- Hallinnan lomake -->
-    <form class="kentat" id="hallinta">
-      <input type="text" class="tekstikentta" name="kayttaja" placeholder="Käyttäjätunnus" required>
-      <input type="password" class="tekstikentta" name="salasana" placeholder="Salasana" required>
+    <form  class="kentat" id="hallinta">
+      <input type="text" class="tekstikentta" name="kayttajaHallinta" placeholder="Käyttäjätunnus" required>
+      <input type="password" class="tekstikentta" name="salasanaHallinta" placeholder="Salasana" required>
       <input type="checkbox" class="checkbox"><span>Muista salasana</span>
       <button type="submit" class="submit-btn">KIRJAUDU SISÄÄN</button>
     </form>
